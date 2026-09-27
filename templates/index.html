@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ComicCraft - AI Comic Creator</title><link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header class="hero"><div><p class="eyebrow">✨ AI STORY STUDIO</p><h1>ComicCraft</h1><p>Turn one idea into a five-panel comic story.</p></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Create your comic</h2>
+    <form action="/generate" method="post" id="comicForm">
+      <label>Story Prompt<textarea name="story_prompt" required placeholder="A brave fox exploring an enchanted forest..."></textarea></label>
+      <div class="grid">
+        <label>Main Character Name<input name="character_name" required placeholder="Luna"></label>
+        <label>Setting<select name="setting"><option>Enchanted forest</option><option>School</option><option>Space</option><option>Futuristic city</option><option>Village</option></select></label>
+        <label>Story Tone<select name="tone"><option>Funny</option><option>Light-hearted</option><option>Dramatic</option><option>Poetic</option><option>Adventure</option></select></label>
+        <label>Art Style<select name="art_style"><option>Comic book</option><option>Anime</option><option>Cartoon</option><option>Pixel art</option><option>Realistic</option></select></label>
+      </div>
+      <button type="submit" class="primary">Generate My Comic 🚀</button>
+    </form>
+    <div id="loading" class="loading" hidden>Generating your story and panels… This can take a few minutes.</div>
+  </section>
+  <section class="info"><div><b>5 panels</b><span>Structured story</span></div><div><b>AI art</b><span>Generated illustrations</span></div><div><b>PDF</b><span>Downloadable comic</span></div></section>
+</main>
+<script src="/static/js/app.js"></script>
+</body></html>

@@ -1,0 +1,1 @@
+const form=document.getElementById('comicForm');const loading=document.getElementById('loading');if(form){form.addEventListener('submit',()=>{loading.hidden=false;document.querySelector('.primary').disabled=true;});}
